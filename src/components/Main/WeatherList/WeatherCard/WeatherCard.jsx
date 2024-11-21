@@ -4,7 +4,7 @@ const WeatherCard = ({ weatherData }) => {
     // Validar que weatherData existe y tiene las propiedades esperadas
     if (!weatherData || !weatherData.dt_txt || !weatherData.main || !weatherData.weather) {
         console.warn("WeatherCard: Datos inválidos:", weatherData);
-        return <div className="weather-item">Datos no disponibles</div>;
+        return <div className="weather-item2">Datos no disponibles</div>;
     }
 
     const { dt_txt, main, weather } = weatherData;
